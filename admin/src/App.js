@@ -24,24 +24,23 @@ function App() {
   return (
     <Router>
         <Routes>
-          <Route path="/login" element={ !user ? <Login/> : <Navigate to="/"/>} />
-          <Route path="/" element={<Layout />}>
-            { user && (
+          <Route path="/login" element={ !user ? <Login/> : (
               <>
-                  <Route path="/" element={<Home/>} />
-                  <Route path="/users" element={<UserList/>} />
-                  <Route path="/user/:userId" element={<User/>} />
-                  <Route path="/newUser" element={<NewUser/>} />
-                  <Route path="/movies" element={<MovieList/>} />
-                  <Route path="/movie/:movieId" element={<Movie/>} />
-                  <Route path="/newMovie" element={<NewMovie/>} />
-                  <Route path="/lists" element={<ListList/>} />
-                  <Route path="/list/:listId" element={<List/>} />
-                  <Route path="/newList" element={<NewList/>} />
+                <Route path="/" element={<Layout />}>
+                    <Route path="/" element={<Home/>} />
+                    <Route path="/users" element={<UserList/>} />
+                    <Route path="/user/:userId" element={<User/>} />
+                    <Route path="/newUser" element={<NewUser/>} />
+                    <Route path="/movies" element={<MovieList/>} />
+                    <Route path="/movie/:movieId" element={<Movie/>} />
+                    <Route path="/newMovie" element={<NewMovie/>} />
+                    <Route path="/lists" element={<ListList/>} />
+                    <Route path="/list/:listId" element={<List/>} />
+                    <Route path="/newList" element={<NewList/>} />
+                </Route>
               </>
-            )}
-           </Route>
-          
+              )
+           } />
         </Routes>
     </Router>
   );
