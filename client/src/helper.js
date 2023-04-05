@@ -1,0 +1,1 @@
+export const API_URL = "https://netflixapi-v9xz.onrender.com/api";

@@ -3,6 +3,7 @@ import Navbar from "../../components/navbar/Navbar";
 import List from "../../components/list/List";
 import "./home.scss";
 import { useEffect, useState } from "react";
+import { API_URL } from "../../helper";
 import axios from "axios";
 
 const Home = ({type}) => {
@@ -13,7 +14,7 @@ const Home = ({type}) => {
     const getRandomLists = async ()=> {
       try{
         const res = await axios.get(
-          `lists${type ? "?type=" + type : ''}${
+          `${API_URL}/lists${type ? "?type=" + type : ''}${
             genre ? "&genre="+ genre : ''
           }`, {
             headers: {

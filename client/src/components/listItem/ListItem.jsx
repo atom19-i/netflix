@@ -8,6 +8,7 @@ import {
 import { useState , useEffect} from "react";
 import axios from "axios";
 import { Link } from "react-router-dom";
+import { API_URL } from "../../helper";
 
 export default function ListItem({ index , item }) {
   const [isHovered, setIsHovered] = useState(false);
@@ -17,7 +18,7 @@ export default function ListItem({ index , item }) {
   useEffect(() => {
     const getMovie = async ()=>{
       try {
-        const res = await axios.get("/movies/find/"+item,{
+        const res = await axios.get(`${API_URL}/movies/find/`+item,{
           headers: {
             token:"Bearer "+JSON.parse(localStorage.getItem("user")).accessToken,
           },

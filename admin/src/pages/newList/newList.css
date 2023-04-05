@@ -1,0 +1,54 @@
+.newList {
+    flex: 4;
+    padding: 20px;
+    -webkit-box-shadow: 0px 0px 15px -10px rgba(0, 0, 0, 0.75);
+    box-shadow: 0px 0px 15px -10px rgba(0, 0, 0, 0.75);
+  }
+  
+  .addListTitle{
+   padding: 10px;
+  }
+
+  .addListForm {
+    margin-top: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 10px;
+  }
+  
+  .addListItem {
+    width: 250px;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 10px;
+    padding: 20px;
+  }
+  
+  .addListItem>label {
+    color: gray;
+    font-weight: 600;
+    margin-bottom: 10px;
+  }
+  
+  .addListItem>input {
+    padding: 10px;
+  }
+  
+  .addListItem>select {
+    padding: 10px;
+  }
+  
+  .addListButton {
+    height: 50px;
+    width: 20%;
+    margin-top: 40px;
+    margin-left: auto;
+    margin-right: 15px;
+    padding: 7px ;
+    border: none;
+    border-radius: 10px;
+    background-color: darkblue;
+    color: white;
+    font-weight: 600;
+    cursor: pointer;
+  }

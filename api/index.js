@@ -21,10 +21,9 @@ mongoose
    });
 
 app.use(express.json());
-// app.use(cors({ 
-//   origin: "frontend_URL", 
-//   credentials: true 
-//  }));
+app.use(cors({ 
+  origin: "https://fascinating-panda-9cee09.netlify.app"
+ }));
 app.use("/api/auth", authRoute);
 app.use("/api/users", userRoute);
 app.use("/api/movies", movieRoute);

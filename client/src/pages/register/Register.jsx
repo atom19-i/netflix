@@ -2,6 +2,7 @@ import "./register.scss";
 import {useState, useRef} from "react";
 import axios from "axios";
 import { useNavigate } from "react-router-dom";
+import { API_URL } from "../../helper";
 
 export default function Register() {
   const [email, setEmail] = useState("");
@@ -24,7 +25,7 @@ export default function Register() {
     //console.log(email+" "+password+" "+username)
     try{
       if(username && password){
-        await axios.post("auth/register", {email, username, password});
+        await axios.post(`${API_URL}/auth/register`, {email, username, password});
         navigate("/login");
       }
       
