@@ -19,7 +19,6 @@ export default function UserList() {
   const handleDelete = (id) =>{
     deleteUser(id, dispatch);
   };
-
  
   
   const columns = [

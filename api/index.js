@@ -24,6 +24,11 @@ app.use(express.json());
 app.use(cors({ 
   origin: "https://fascinating-panda-9cee09.netlify.app"
  }));
+ 
+ //try here
+//  app.use(cors({ 
+//   origin: ["http://localhost:3000", "https://origin2.com"]
+//  }));
 app.use("/api/auth", authRoute);
 app.use("/api/users", userRoute);
 app.use("/api/movies", movieRoute);
