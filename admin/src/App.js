@@ -25,6 +25,7 @@ function App() {
     <Router>
         <Routes>
           <Route path="/login" element={ !user ? <Login/> : <Navigate to="/"/>} />
+          <Route path="/" element={ !user ? <Login/> : <Home/>} />
             { user && (
               <>
                 <Route path="/" element={<Layout />}>
