@@ -24,7 +24,8 @@ function App() {
   return (
     <Router>
         <Routes>
-          <Route path="/login" element={ !user ? <Login/> : (
+          <Route path="/login" element={ !user ? <Login/> : <Navigate to="/"/>} />
+            { user && (
               <>
                 <Route path="/" element={<Layout />}>
                     <Route path="/" element={<Home/>} />
@@ -39,8 +40,8 @@ function App() {
                     <Route path="/newList" element={<NewList/>} />
                 </Route>
               </>
-              )
-           } />
+            )}
+          
         </Routes>
     </Router>
   );
