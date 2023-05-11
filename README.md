@@ -1,7 +1,7 @@
 # Nflix:
-![nflix_demo](https://github.com/atom19-i/nflix/blob/main/gif/netflix_demo.gif "nflix_demo")
+![nflix_demo](https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExOTBiZjU2OTM1NDJhYzk3N2UyMGZkNWY3NTlhYmMzZjNlYWYwMGI2NSZlcD12MV9pbnRlcm5hbF9naWZzX2dpZklkJmN0PWc/G7vuOjhVatG3ynndvJ/giphy.gif "nflix_demo")
 
 *** 
 
 # Admin Dashboard:
-![admin_dashboard_demo](https://github.com/atom19-i/nflix/blob/main/gif/admin_dashboard_demo.gif "admin_dashboard_demo")
+![admin_dashboard_demo](https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExNGMyNWVhZjA4ODlhNDEyYWY2NzQ1N2UyZjg4ZTA1ZGVlZjQwNmRiNSZlcD12MV9pbnRlcm5hbF9naWZzX2dpZklkJmN0PWc/UTmzNwhivOiXMOaral/giphy-downsized-large.gif "admin_dashboard_demo")
