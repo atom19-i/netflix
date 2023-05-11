@@ -17,4 +17,4 @@ You will also see any lint errors in the console.
 ####
 
 # Nflix:
-![nflixDemo](https://github.com/atom19-i/nflix/blob/main/gif/netflix_demo.gif)
+<img src="gif/netflix_demo.gif?raw=true" width="200px">
