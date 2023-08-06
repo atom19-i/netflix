@@ -22,7 +22,7 @@ mongoose
 
 app.use(express.json());
 app.use(cors({ 
-  origin: "https://fascinating-panda-9cee09.netlify.app"
+  origin: "https://nflix-omega.vercel.app"
  }));
  
  //try here
